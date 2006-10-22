@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc.//DTD JNLP 1.5//EN" "http://www.netbeans.org/jnlp/DTD/jnlp.dtd">
+<jnlp codebase="$$codebase" href="DeliciousPostChecker.jnlp">
+  <information>
+    <title>Del.icio.us post checker</title>
+    <vendor>Kim Tiedemann</vendor>
+    <homepage href="homepage.html"/>
+    <description>This application will check the all the post in your del.icio.us account </description>
+    <icon href="default"/>
+    <offline-allowed/>
+    <shortcut online="true"/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources locale="" os="">
+    <j2se href="http://java.sun.com/products/autodl/j2se" version="1.5+"/>
+  </resources>
+  <resources>
+    <jar download="eager" href="dist/DeliciousPostChecker.jar" main="false"/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/LinkChecker.jar" main="false" version=""/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/BrowserLauncher2-10rc4.jar" main="false" version=""/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/swing-layout-1.0.jar" main="false" version=""/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/swing-worker.jar" main="false" version=""/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/delicious-1.10.jar" main="false" version=""/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/commons-logging-1.0.4.jar" main="false" version=""/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/commons-httpclient-3.0.jar" main="false" version=""/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/commons-codec-1.3.jar" main="false" version=""/>
+  </resources>
+  <resources locale="" os="">
+    <jar download="eager" href="dist/lib/jdom.jar" main="false" version=""/>
+  </resources>
+  <application-desc main-class="dk.tiede.feed.ui.MainFrame"/>
+</jnlp>
