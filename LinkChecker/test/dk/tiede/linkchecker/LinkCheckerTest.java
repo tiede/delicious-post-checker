@@ -21,10 +21,7 @@
 package dk.tiede.linkchecker;
 
 import junit.framework.*;
-import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 /**
  *
