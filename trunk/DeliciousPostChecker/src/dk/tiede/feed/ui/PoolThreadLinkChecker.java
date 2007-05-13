@@ -22,16 +22,9 @@
 
 package dk.tiede.feed.ui;
 
-import dk.tiede.linkchecker.LinkChecker;
-import java.awt.Image;
-import java.beans.BeanDescriptor;
-import java.beans.BeanInfo;
-import java.beans.EventSetDescriptor;
-import java.beans.MethodDescriptor;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
-import java.beans.PropertyDescriptor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -58,6 +51,9 @@ public class PoolThreadLinkChecker implements PropertyChangeListener {
         this.totalLinks = totalLinks;
     }
     
+    /**
+     *
+     */
     public<T,V> void submitLinkCheck(SwingWorker<T,V> worker) {
         worker.addPropertyChangeListener(this);
         swingWorkers.add(worker);
